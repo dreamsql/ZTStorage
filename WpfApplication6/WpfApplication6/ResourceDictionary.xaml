@@ -1,0 +1,111 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic"
+                    xmlns:converter="clr-namespace:WpfApplication6.Converter">
+
+    <converter:StorageConverter x:Key="StorageConverter"></converter:StorageConverter>
+    <Style x:Key="TextBoxStyle_Caculate" TargetType="TextBox">
+        <Setter Property="Width" Value="100"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+    </Style>
+    
+    <Style x:Key="TextBoxStyle_Storage" TargetType="TextBox">
+        <Setter Property="Width" Value="100"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+    </Style>
+    <Style x:Key="TextBlockStyle_Storage" TargetType="TextBlock">
+        <Setter Property="Width" Value="50"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+    </Style>
+    
+    <Style x:Key="StackPanelStyle_Storage" TargetType="StackPanel">
+        <Setter Property="Orientation" Value="Horizontal"></Setter>
+    </Style>
+    
+    <Style x:Key="TextBlockStyle_Caculate" TargetType="TextBlock">
+        <Setter Property="Width" Value="50"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+    </Style>
+    
+    <Style x:Key="ComboBoxStyle_Goods" TargetType="ComboBox">
+        <Setter Property="Width" Value="100"></Setter>
+    </Style>
+
+
+    <Style  TargetType="{x:Type TabItem}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource TabItemFocusVisual}"/>
+        <Setter Property="Padding" Value="12,2,12,2"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TabItem}">
+                    <Microsoft_Windows_Themes:ClassicBorderDecorator x:Name="ClassicBorder" BorderBrush="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}" BorderThickness="2" BorderStyle="TabTop" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                        <ContentPresenter ContentSource="Header" HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                    </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="true">
+                            <Setter Property="Panel.ZIndex" Value="1"/>
+                            <Setter Property="Background" Value="#FF808080"></Setter>
+                        </Trigger>
+                        <Trigger Property="TabStripPlacement" Value="Bottom">
+                            <Setter Property="BorderStyle" TargetName="ClassicBorder" Value="TabBottom"/>
+                        </Trigger>
+                        <Trigger Property="TabStripPlacement" Value="Left">
+                            <Setter Property="BorderStyle" TargetName="ClassicBorder" Value="TabLeft"/>
+                        </Trigger>
+                        <Trigger Property="TabStripPlacement" Value="Right">
+                            <Setter Property="BorderStyle" TargetName="ClassicBorder" Value="TabRight"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="false"></Condition>
+                                <Condition Property="IsMouseOver" Value="true"></Condition>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" Value="#FF809FDC"></Setter>
+                        </MultiTrigger>
+
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="true"/>
+                                <Condition Property="TabStripPlacement" Value="Top"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Margin" Value="-2"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="true"/>
+                                <Condition Property="TabStripPlacement" Value="Bottom"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Margin" Value="-2"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="true"/>
+                                <Condition Property="TabStripPlacement" Value="Left"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Padding" Value="11,2,14,2"/>
+                            <Setter Property="Margin" Value="-2"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="true"/>
+                                <Condition Property="TabStripPlacement" Value="Right"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Padding" Value="14,2,11,2"/>
+                            <Setter Property="Margin" Value="-2"/>
+
+                        </MultiTrigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

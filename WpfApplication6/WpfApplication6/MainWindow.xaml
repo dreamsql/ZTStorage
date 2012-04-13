@@ -1,0 +1,235 @@
+﻿<Window x:Class="WpfApplication6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" MinHeight="300" MinWidth="300" MaxHeight="500" MaxWidth="700">
+
+    <TabControl>
+        <TabItem Height="40" Width="100" Header="Caculator">
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBox Text="{Binding FirstAdd1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="0" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+                <TextBox Text="{Binding FirstAdd2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="1" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Grid.Row="1" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+
+                <TextBox Text="{Binding FirstAdd3, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd3, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="2" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue3, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue3, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+
+
+                <TextBox Text="{Binding FirstAdd4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="3" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+
+                <TextBox Text="{Binding FirstAdd5, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd5, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="4" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue5, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue5, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+
+                <TextBox Text="{Binding FirstAdd6, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="5" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd6, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="5" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue6, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue6, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+
+
+                <TextBox Text="{Binding FirstAdd7, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="6" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="6" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd7, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="6" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="6" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue7, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="6" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue7, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="6" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+
+                <TextBox Text="{Binding FirstAdd8, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="7" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="7" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd8, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="7" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="7" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue8, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="7" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue8, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="7" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+                <TextBox Text="{Binding FirstAdd9, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="8" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="8" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd9, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="8" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="8" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue9, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="8" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue9, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="8" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+
+                <TextBox Text="{Binding FirstAdd10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="9" Grid.Column="0" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="X" Grid.Row="9" Grid.Column="1" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding SecondAdd10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="9" Grid.Column="2" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBlock Text="=" Grid.Row="9" Grid.Column="3" Style="{StaticResource TextBlockStyle_Caculate}"></TextBlock>
+                <TextBox Text="{Binding LValue10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="9" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DValue10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="9" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+
+
+
+                <TextBox Text="{Binding LTotalValue, Mode=TwoWay}" Grid.Row="10" Grid.Column="4" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+                <TextBox Text="{Binding DTotalValue, Mode=TwoWay}" Grid.Row="10" Grid.Column="5" Style="{StaticResource TextBoxStyle_Caculate}"></TextBox>
+
+
+            </Grid>
+        </TabItem>
+        <TabItem Height="40" Width="100" Header="Storage">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="0" Grid.Column="0">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="区："></TextBlock>
+                    <TextBox Style="{StaticResource TextBoxStyle_Storage}" Text="{Binding Area, Mode=TwoWay}"></TextBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="0" Grid.Column="1">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="账户名："></TextBlock>
+                    <TextBox Style="{StaticResource TextBoxStyle_Storage}" Text="{Binding AccountName, Mode=TwoWay}"></TextBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="0" Grid.Column="2">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="角色名："></TextBlock>
+                    <TextBox Style="{StaticResource TextBoxStyle_Storage}" Text="{Binding UserName, Mode=TwoWay}"></TextBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="1" Grid.Column="0">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="仓库号："></TextBlock>
+                    <TextBox Style="{StaticResource TextBoxStyle_Storage}" Text="{Binding Code, Mode=TwoWay}" ></TextBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="1" Grid.Column="1">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="剩余格子数："></TextBlock>
+                    <TextBox Style="{StaticResource TextBoxStyle_Storage}" Text="{Binding FreeSpace, Mode=TwoWay}"></TextBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="1" Grid.Column="2">
+                    <Button Grid.Row="1" Grid.Column="2" Content="查询" Height="30" Width="100" Command="{Binding StorageQueryCmd}"></Button>
+                    <Button Grid.Row="1" Grid.Column="2" Content="删除" Height="30" Width="100" Command="{Binding DelStorageCmd}"></Button>
+                </StackPanel>
+
+                <DataGrid Grid.Row="2" Grid.ColumnSpan="3" AutoGenerateColumns="False" ItemsSource="{Binding StorageView}"  CanUserAddRows="True" IsSynchronizedWithCurrentItem="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="100" Header="编号" Binding="{Binding Code}" ></DataGridTextColumn>
+                        <DataGridTextColumn Width="100" Header="剩余空间" Binding="{Binding FreeSpace}" ></DataGridTextColumn>
+                        <DataGridTextColumn Width="100" Header="区" Binding="{Binding Area}" ></DataGridTextColumn>
+                        <DataGridTextColumn Width="100" Header="账号" Binding="{Binding UserAccount}" ></DataGridTextColumn>
+                        <DataGridTextColumn Width="100" Header="角色" Binding="{Binding UserName}" ></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Height="40" Width="100" Header="Goods">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="0" Grid.Column="0">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="编号："></TextBlock>
+                    <TextBox Style="{StaticResource TextBoxStyle_Storage}" Text="{Binding GoodsCode, Mode=TwoWay}"></TextBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="0" Grid.Column="1">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="剩余时间："></TextBlock>
+                    <TextBox Style="{StaticResource TextBoxStyle_Storage}" Text="{Binding GoodsLeftDay, Mode=TwoWay}"></TextBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="0" Grid.Column="2">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="区："></TextBlock>
+                    <ComboBox Style="{StaticResource ComboBoxStyle_Goods}" ItemsSource="{Binding AreaView}" IsSynchronizedWithCurrentItem="True" SelectedValue="{Binding GoodsArea, Mode=TwoWay}" SelectedIndex="0"></ComboBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle_Storage}" Grid.Row="1" Grid.Column="0">
+                    <TextBlock Style="{StaticResource TextBlockStyle_Storage}" Text="仓库："></TextBlock>
+                    <ComboBox Style="{StaticResource ComboBoxStyle_Goods}" ItemsSource="{Binding StoragePerAreaView}" IsSynchronizedWithCurrentItem="True" DisplayMemberPath="Code" SelectedValuePath="ID" SelectedValue="{Binding GoodsStorage, Mode=TwoWay}" SelectedIndex="0"></ComboBox>
+                </StackPanel>
+                <Button Grid.Row="1" Grid.Column="1" Content="查询" HorizontalAlignment="Left" Height="30" Width="100" Command="{Binding GoodsQueryCmd}"></Button>
+                <Button Grid.Row="1" Grid.Column="2" Content="删除" HorizontalAlignment="Left" Height="30" Width="100" Command="{Binding DelGoodsCmd }"></Button>
+                <DataGrid Grid.Row="2" Grid.ColumnSpan="3" AutoGenerateColumns="False" CanUserAddRows="True" ItemsSource="{Binding GoodsView}" IsSynchronizedWithCurrentItem="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="编号" Binding="{Binding Code}" Width="80"></DataGridTextColumn>
+                        <DataGridTextColumn Header="名称" Binding="{Binding Name}" Width="80"></DataGridTextColumn>
+                        <DataGridTextColumn Header="数量" Binding="{Binding Quantity}" Width="80"></DataGridTextColumn>
+                        <DataGridTextColumn Header="剩余时间" Binding="{Binding LeftDay}" Width="80"></DataGridTextColumn>
+                        <DataGridTextColumn Header="备注" Binding="{Binding Desc}" Width="80"></DataGridTextColumn>
+                        <DataGridTextColumn Header="价格" Binding="{Binding Price}" Width="80"></DataGridTextColumn>
+                        <DataGridTextColumn Header="创建时间" Binding="{Binding CreateDate}" Width="80"></DataGridTextColumn>
+                        <DataGridTemplateColumn Width="80" Header="仓库">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding StorageId, Converter={StaticResource StorageConverter}}"></TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <ComboBox ItemsSource="{Binding Storages}" DisplayMemberPath="Code" SelectedValuePath="ID" SelectedValue="{Binding StorageId, Mode=TwoWay}"></ComboBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Height="40" Width="100" Header="OverTime">
+
+        </TabItem>
+    </TabControl>
+</Window>

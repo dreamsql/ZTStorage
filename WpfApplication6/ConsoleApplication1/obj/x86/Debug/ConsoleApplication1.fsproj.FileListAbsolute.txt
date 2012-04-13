@@ -1,0 +1,9 @@
+D:\VsProjects\WpfApplication6\ConsoleApplication1\bin\Debug\ConsoleApplication1.XML
+D:\VsProjects\WpfApplication6\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\VsProjects\WpfApplication6\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\VsProjects\WpfApplication6\ConsoleApplication1\bin\Debug\CaculateLibrary.dll
+D:\VsProjects\WpfApplication6\ConsoleApplication1\bin\Debug\CaculateLibrary.pdb
+D:\VsProjects\WpfApplication6\ConsoleApplication1\bin\Debug\CaculateLibrary.xml
+D:\VsProjects\WpfApplication6\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\VsProjects\WpfApplication6\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\VsProjects\WpfApplication6\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
